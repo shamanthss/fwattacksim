@@ -4,8 +4,8 @@ DoS Attack using Hping3
 Replay Attack using Tcpreplay
 Man-in-the-Middle (MitM) Attack using Ettercap
 DNS Tunneling using dnscat2
-ASCII Art branding for every execution!
-Requirements
+
+##Requirements
 To run this script, you will need the following tools installed on your system:
 
 Hydra
@@ -13,32 +13,37 @@ Hping3
 Tcpreplay
 Ettercap
 dnscat2
-Installing Dependencies on Debian/Ubuntu:
+
+## Installing Dependencies on Debian/Ubuntu:
+
 bash
 
 sudo apt update
 sudo apt install hydra hping3 tcpreplay ettercap-text-only
 For dnscat2, you'll need to install it from the source:
 
+
 bash
 
 git clone https://github.com/iagox86/dnscat2.git
 cd dnscat2
 make
-Installation
+
+
+##Installation
 Clone this repository to your local machine:
 
 bash
 git clone https://github.com/ch3332xr/fwattacksim.git
 cd fwattacksim
 
-Make the script executable:
+#Make the script executable:
 
 bash
 chmod +x attack-script.sh
 Install the required tools using the commands provided in the "Requirements" section.
 
-Usage
+##Usage
 To launch the attack script, run:
 
 bash
