@@ -15,16 +15,13 @@ Installs the necessary tools for running the attack simulations.
    ```bash
    sudo apt update
    sudo apt install hydra hping3 tcpreplay ettercap-text-only
-   git clone https://github.com/iagox86/dnscat2.git
-   cd dnscat2
-   make
 
 #### [2] Start the Attack Simulation
 
 1. Run as ROOT
 2. Clone this repository:
    ```bash
-   git clone https://github.com/ch3332xr/fwattacksim.git
+   git clone https://github.com/shamanthss/fwattacksim
    cd fwattacksim
    chmod +x firewall_attack_simulation.sh
    sudo ./firewall_attack_simulation.sh
