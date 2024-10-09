@@ -7,3 +7,4 @@ alert icmp any any -> any any (msg:"ICMP Redirect Attack Detected"; content:"|05
 alert icmp any any -> any any (msg:"ICMP Echo Flood Attack Detected"; content:"|08 00 00 00|"; threshold: type both, track by_src, count 50, seconds 1; sid:1000007; rev:1;)
 alert icmp any any -> any any (msg:"ICMP Unreachable Attack Detected"; content:"|03 00 00 00|"; threshold: type both, track by_src, count 50, seconds 1; sid:1000008; rev:1;)
 alert icmp any any -> any any (msg:"ICMP FLOOD Attack Detected"; threshold: type both, track by_src, count 50, seconds 1; sid:1000009; rev:1;)
+alert tcp any any -> 192.168.1.1 80 (msg:"TCP Replay Attack to 192.168.1.1:80 Detected"; sid:1000002; rev:1;)
